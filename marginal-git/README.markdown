@@ -8,16 +8,13 @@ DISCLAIMER: I have no idea what I'm talking about.
 * directed acyclic graph
   * **`git log --graph --oneline --decorate --all`**
   * [example branching model][branching-model]
-
 * branches as named pointers
   * point a branch to something new: **`git help reset`**
   * drop a new one at your current location: **`git branch ill-get-to-this-later`**
-
 * tags as named constant pointers plus metadata
   * by the way, you should probably annotate (-a) your tags
   * **`git help describe`**
   * [lightweight vs. annotated tags][annotated-tags]
-
 * **`git reflog`**
   * even if you point a branch at something new, the commits formerly pointed to still exist (until garbage collected)
 
@@ -26,10 +23,8 @@ DISCLAIMER: I have no idea what I'm talking about.
 
 * pull may not be the preferred default for synching your work with upstream changes
   * tip: fetch first so that you can review changes before incorporating your work
-
 * suggestion: rebasing is usually cleaner than merging when incorporating upstream commits into a work in progress
   * **warning**: try not to rebase when working with published history; it messes everyone else up
-
 * [about pull --rebase][pull-rebase]
 * pull vs. fetch and merge (or rebase)
   * [fetch and merge, don't pull][no-pull]
